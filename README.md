@@ -4,7 +4,7 @@
 
 ### 使用
 ```
->NSMutableParagraphStyle *style = [[NSMutableParagraphStyle alloc] init];
+NSMutableParagraphStyle *style = [[NSMutableParagraphStyle alloc] init];
 style.alignment = NSTextAlignmentLeft;
 NSMutableAttributedString *attr = [[NSMutableAttributedString alloc] initWithString:@"异步渲染" attributes:@{NSFontAttributeName : [UIFont systemFontOfSize:15 weight:UIFontWeightRegular],NSForegroundColorAttributeName:[UIColor redColor],NSParagraphStyleAttributeName:style}];
 [attr addAttributes:@{NSFontAttributeName:[UIFont systemFontOfSize:16 weight:UIFontWeightRegular],NSForegroundColorAttributeName:[UIColor greenColor],NSParagraphStyleAttributeName:style} range:NSMakeRange(0, 1)];
